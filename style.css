@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: whitesmoke;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;   
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background: gray;
+    transition: 2s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.content .content8x h1 {
+    font-size: 5em;
+    color: #000;
+    line-height: 1em;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.content .content8x p {
+    font-size: 1em;
+    color: #000;
+    margin: 30px 10px;
+    margin-left: 50px;
+}
+
+.content .content8x .btn {
+    background: #8a2435;
+    color: #ffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin: 10px;
+    transition: 0.5s;
+    margin-left: 50px;
+}
+
+.content .content8x .btn:hover {
+    background: #ffff;
+    color: #8a2435;
+    box-shadow: 0 50x 10px rgba(0,0,0,0.1);
+}
+
+.img1x img {
+    background-attachment: fixed;
+    margin-top: 5px;
+    width: 60%;
+    margin-left: 190px;
+    border-radius: 100px;
+}
+
+.box1 img {
+    margin-top: 5%;
+    width: 350px;
+}
+
+.box1 {
+    float: left;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 70px;
+}
+
+.box1:hover {
+    box-shadow: 0px 0px 2px 2px grey;
+    cursor: grab;
+}
+
+.heading {
+    font-size: 20px;
+    color: brown;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.box1 p {
+    padding: 5px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.price {
+    color: brown;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button button {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgba(3, 63, 3);
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.locate {
+    padding: 20px;
+    font-size: 20px;
+    background: #2691d9;
+}
+
+.locate1 {
+    padding: 20px;
+    font-size: 20px;
+    background: whitesmoke;
+}
+
+.locate2 {
+    padding: 20px;
+    font-size: 20px;
+    background: gray;
+}
+
+.locate3 {
+    padding: 20px;
+    font-size: 20px;
+    background: #2c3e50;
+}
+
+.center {
+    position: absolute;
+    top: 55%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: gray;
+    border-radius: 10px;
+}
+
+.center h1 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: black;
+}
+
+.txt_field input:valid ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: -5px 0 20px 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color: #2691d926;
+    transition: .5s;
+}
+
+.signup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.signup_link a {
+    color: black;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+    label.logo {
+        font-size: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 25%;
+        height: 45vh;
+        background: #2c3e50;
+        top: 80px;
+        right: -50%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px;
+        height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover {
+        background: none;
+        color: white;        
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
+
+    .center{
+        top: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        background: whitesmoke;
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 20px;
+    }
+
+    .content .content8x h1 {
+        font-size: 4em;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .img1x img {
+        width: 70%;
+        margin-left: 100px;
+    }
+
+    .box1 {
+        margin-left:200px;
+    }
+
+    .center {
+    top: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    label.logo {
+    font-size: 25px;
+    }
+
+    .content {
+        margin-left: 10px;
+    }
+
+    .img1x img {
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .box1 {
+        margin-left: 120px;
+    }
+
+    ul {
+        width: 30%;
+    }
+}
+
